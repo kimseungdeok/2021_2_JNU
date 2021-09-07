@@ -33,7 +33,7 @@
 - 인증성(Authenticity) : 진짜라는 성질을 확인할 수 있고 신뢰할 수 있다는 것. 전송, 메시지, 메시지 출처 유효성의 확신.
 - 책임성(Accountability) : 보안 목적에는 개체의 행동을 유일하게 추적해서 찾아낼수 있어야 한다는 사항이 포함되어야 한다. 여기에는 부인 봉쇄, 억제, 결함 분리, 침입 탐지 및 예방, 사후 복구와 법적인 조치 등이 포함된다.
 
-  ![네트워크와 컴퓨터의 핵심 보안 요구사항](Information_Security\Network_Security_Essentials.jpg)
+  ![네트워크와 컴퓨터의 핵심 보안 요구사항](https://github.com/kimseungdeok/2021_2_JNU/blob/main/Information_Security/Network_Security_Essentials.jpg)
 
 ### 사례
 - 저급(low) 위험
