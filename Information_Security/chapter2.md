@@ -33,4 +33,11 @@
 ### 암호해독
 - 평문이나 키를 찾으려는 시도
 - 암호해독에 쓰이는 전략은 encryption scheme의 특성과 가용 정보에 dependent
+#### 암호해독 공격유형
+- 암호문만 알고있는 공격(Ciphertext-only attack)
+>- 가장 어려운 경우임
+>- 일반적으로 암호화 알고리즘은 알려져있다고 전제
+- 알려진 평문 공격(known-plaintext attack)
+>- 하나 이상의 plaintext 메세지를 capture할 수 있거나 어떤 plain text pattern들이 메세지에 나타남
+- 
 
