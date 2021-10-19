@@ -11,5 +11,12 @@
 - 정지-대기 ARQ 방식
 - go-back-N ARQ 방식
 - selective repeat ARQ 방식
-
+#### 정지-대기 ARQ 방식
+1. stop : 전송단은 Data frame을 전송하고 Frame 전송을 멈추고
+2. 전송 buffer : 재선송 경우를 위해 전송한 frame을 buffer에 저장하고
+3. timer : ACK 또는 NAK frame을 수신할 때까지 timer를 동작시키고
+4. ACK 수신 : 다음 Data frame을 전송
+5. 다음의 경우 이전 Data frame을 재전송
+>1. 수신단으로부터 NAK 수신
+>2. timer의 time-out(RTT/RTD) 동안 수신단으로부터 ACK frame을 수신하지 못할 경우
 
