@@ -20,3 +20,13 @@
 ### 인터넷 프로토콜(IP, Internet Protocol)
 - 인터넷을 통해 사용자 호스트와 서버간 발신, 착신 IP 주소에 따라 데이터그램 혹은 패킷을 전달하는 통신 프로토콜(최근에는 패킷보다는 데이터그램을 더 많이 사용)
 - 인터넷으로 데이터그램을 전달하기 위해 호스트와 서버의 주소지정, 패킷의 분할 및 조립, 라우팅 기능을 수행
+
+## 전송 계층(Transport layer) 프로토콜
+
+- 네트워크 계층의 종단-대-종단 통신 기능을 이용하여 클라이언트의 프로세스와 서버의 프로세스 간 논리적인 통신 기능을 제공
+- 클라이언트와 서버의 프로세스는 포트 번호(port number)로 구분
+- 신뢰적인 데이터 전달(reliable data transfer)을 위한 프로토콜
+- 흐름 제어(flow control), 혼잡 제어(congestion control)
+- 다중화/역다중화(multiplexing/demultiplexing)
+- TCP(Transmission Control Protocol) : 연결지향형 서비스(connection-oriented service)로 신뢰적인 데이터 전달 서비스 제공
+- UDP(User Datagram Protocol) : 비연결 서비스(connectionless service)로 실시간 통신 서비스 제공
