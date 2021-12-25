@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+.avatar {
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+#container {
+    width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+}
+#header {
+    width: 1100px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+#sidebar {
+    float : left;
+    width: 290px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+#contents {
+    width: 700px;
+    padding: 20px;
+    float: right;
+    margin-bottom: 20px;
+}
+#footer {
+    clear: both;
+    background-color: #eee;
+}
+.sidelist {
+    list-style: none;
+    margin-left: -30px;
+}
+li {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+.contentsmargin {
+    margin-right: 68.5px;
+    margin-left: 68.5px;
+
+}
+.frontendmargin {
+    margin-right: 88.5px;
+    margin-left: 88.5px;
+}
+.backendmargin {
+    margin-right: 92.5px;
+    margin-left: 92.5px;
+}
+.collabmargin {
+    margin-right: 63.5px;
+    margin-left: 63.5px;
+}
+.edumargin {
+    margin-right: 10px;
+}
+.edumargin2 {
+    margin-right: 20px;
+}
+.exmargin {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.inline {
+    display: inline;
+}
+table {
+    width: 700px;
+    
+}
+th {
+    width: 315px;
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+}
+.smallfont {
+    font-size: smaller;
+}
+.footertext {
+    padding: 50px;
+    margin-left: 180px;
+}
+hr {
+    background: rgb(220, 221, 224);
+    height: 1px;
+    border: 0px;
+}
+::-moz-selection{
+  background: #cc0000;
+  color: #ffffff;
+}
+::selection{
+    background: #cc0000;
+    color: #ffffff;
+}
+.logo {
+margin-right: 5px;
+}
+.totop{
+position: fixed;
+bottom: 50px;
+right: 80px;
+
+}
+
+

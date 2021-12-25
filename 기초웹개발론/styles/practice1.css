@@ -1,0 +1,4 @@
+@charset "utf-8";
+table, th, td {border:1px solid black;}
+td {padding:5px;  /* 셀 테두리와 내용 사이의 간격(패딩) */}
+caption {font-weight: bold;}

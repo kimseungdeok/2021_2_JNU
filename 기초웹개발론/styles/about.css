@@ -1,0 +1,448 @@
+
+li {
+    list-style-type:none;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+hr {
+    background: rgb(220, 221, 224);
+    height: 1px;
+    border: 0px;
+}
+.avatar {
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+.logo {
+        margin-right: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+::-moz-selection{
+    background: #cc0000;
+    color: #ffffff;
+}
+::selection{
+    background: #cc0000;
+    color: #ffffff;
+}
+#header path {
+    animation: animation 1s linear forwards,
+    end 0.5s linear forwards;
+}
+@keyframes animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes end {
+    to {
+        fill : red;
+    }
+}
+svg path:nth-child(1) {
+    stroke-dasharray: 819px;
+    stroke-dashoffset: 819px;
+    animation-delay: 0.1s;
+}
+svg path:nth-child(2) {
+    stroke-dasharray: 875px;
+    stroke-dashoffset: 875px;
+    animation-delay: 0.3s;
+}
+svg path:nth-child(3) {
+    stroke-dasharray: 786px;
+    stroke-dashoffset: 786px;
+    animation-delay: 0.6s;
+}
+svg path:nth-child(4) {
+    stroke-dasharray: 791px;
+    stroke-dashoffset: 791px;
+    animation-delay: 0.9s;
+}
+svg path:nth-child(5) {
+    stroke-dasharray: 1038px;
+    stroke-dashoffset: 1038px;
+    animation-delay: 1.2s;
+}
+svg path:nth-child(6) {
+    stroke-dasharray: 996px;
+    stroke-dashoffset: 996px;
+    animation-delay: 1.5s;
+}
+svg path:nth-child(7) {
+    stroke-dasharray: 875px;
+    stroke-dashoffset: 875px;
+    animation-delay: 1.8s;
+}
+svg path:nth-child(8) {
+    stroke-dasharray: 796px;
+    stroke-dashoffset: 796px;
+    animation-delay: 2.1s;   
+}
+svg path:nth-child(9) {
+    stroke-dasharray: 914px;
+    stroke-dashoffset: 735px;
+    animation-delay: 2.4s;
+}        
+svg path:nth-child(10) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation-delay: 2.4s;
+}
+.cube {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+.cube img {
+    width: 300px;
+    height: 300px;
+}
+@keyframes cube {
+    0% {
+        transform: rotateY(0deg);
+
+    }
+    100%{
+        transform: rotateY(1turn);
+    }
+
+}
+.cube:hover {
+    /* transition: 3s; */
+    animation: cube 3s linear infinite;
+    /* transform: rotateY(60deg); */
+}
+.cube div{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+:root {
+    --color1: #ccccff55;
+    --color2: #6495ed55;
+    --color3: #4be0d055;
+    --color4: #9fe2bf55;
+    --color5: #1eff2155;
+    --color6: #9e1a9e55;
+
+}
+.cube .top {
+    transform:rotateX(90deg) translateZ(150px);
+    background-color: var(--color2);
+}
+.cube .bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+    background-color: var(--color3);
+}
+.cube .left {
+    transform: rotateY(-90deg) translateZ(150px);
+    background-color: var(--color4);
+}
+.cube .right {
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: var(--color5);
+}
+.cube .front {
+    transform: translateZ(150px);
+    background-color: var(--color6);
+}
+.cube .back {
+    transform: rotateY(0.5turn) translateZ(150px);
+    background-color: var(--color1);
+}
+
+@media screen and (min-width : 1025px) {
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    #header {
+        width: 100%;
+        height: 120px;
+        justify-content: center;
+
+        border-bottom: 1px solid #e2e2e2;
+
+    }
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #sidebar { 
+        width: 30%;
+        padding-top: 50px;
+    }
+    #content {
+        width: 45%;
+
+    }
+    #footer {
+        width: 100%;
+        height: 120px;
+        margin: 0 auto;
+        flex-direction: column;
+        background-color: #eee;
+
+        padding-left: 12.5%;
+    }
+    svg {
+        height: 50px;
+        width: 650px;
+        margin-top: 45px;
+    }
+    .contentAbout{
+        padding-top: 50px;
+    }
+    .contentFlex{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .contentTitle{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .contentAboutText{
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+    .contentSkills {
+        padding-top: 20px;
+    }
+    .contentFrontendText{
+        padding-left: 105px;
+        padding-bottom: 20px;
+    }
+    .contentBackendText {
+        padding-left: 115px;
+        padding-bottom: 20px;
+    }
+    .contentEducation {
+        padding-top: 20px;
+    }
+    .smallfont {
+        font-size: smaller;
+    }
+    .eduTable {
+        padding-left: 40px;
+    }
+    .contentWorks {
+        padding-top: 20px;
+    }
+    .footertext {
+        padding-top: 40px;
+    }
+    .contentCube {
+        padding-bottom: 30px;
+    }
+    .contentCubeTitle {
+        padding-bottom: 30px;
+    }
+    
+    .totop{
+        position: fixed;
+        bottom: 50px;
+        right: 80px;
+
+    }
+
+}
+@media screen and (max-width : 1025px) and (min-width : 640px) {
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #header {
+        width: 100%;
+        height: 120px;
+
+        border-bottom: 1px solid #e2e2e2;
+        justify-content: center;
+
+        padding-top: 60px;
+    }
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #sidebar { 
+        width: 30%;
+        padding-top: 50px;
+        padding-left: 30px;
+
+    }
+    #content {
+        width: 70%;
+
+    }
+    #footer {
+        width: 100%;
+        height: 120px;
+        flex-direction: column;
+        padding-left: 10px;
+        background-color: #eee;
+    }
+    svg {
+        height: 50px;
+        width: 300px;
+    }
+    .contentAbout{
+        padding-top: 50px;
+    }
+    .contentFlex{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .contentTitle{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .contentAboutText{
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+    .contentSkills {
+        padding-top: 20px;
+    }
+    .contentFrontendText{
+        padding-left: 105px;
+        padding-bottom: 20px;
+    }
+    .contentBackendText {
+        padding-left: 115px;
+        padding-bottom: 20px;
+    }
+    .contentEducation {
+        padding-top: 20px;
+    }
+    .smallfont {
+        font-size: smaller;
+    }
+    .eduTable {
+        padding-left: 40px;
+    }
+    .contentWorks {
+        padding-top: 20px;
+    }
+    .footertext {
+        padding-top: 40px;
+    }
+    .contentCube {
+        padding-bottom: 30px;
+    }
+    .contentCubeTitle {
+        padding-bottom: 30px;
+    }
+    .totop{
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+
+    }
+}
+@media screen and (max-width : 640px){
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #header {
+        width: 100%;
+        height: 120px;
+
+        border-bottom: 1px solid #e2e2e2;
+
+        padding-top: 60px;
+    }
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar { 
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    #content {
+        width: 100%;
+        padding-left: 10px;
+    }
+    #footer {
+        width: 100%;
+        height: 120px;
+        padding-left: 10px;
+        background-color: #eee;
+    }
+    svg {
+        height: 50px;
+        width: 300px;
+    }
+    .contentAbout{
+        padding-top: 50px;
+    }
+    .contentFlex{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .contentTitle{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .contentAboutText{
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+    .contentSkills {
+        padding-top: 20px;
+    }
+    .contentFrontendText{
+        padding-left: 105px;
+        padding-bottom: 20px;
+    }
+    .contentBackendText {
+        padding-left: 115px;
+        padding-bottom: 20px;
+    }
+    .contentEducation {
+        padding-top: 20px;
+    }
+    .smallfont {
+        font-size: smaller;
+    }
+    .eduTable {
+        padding-left: 40px;
+    }
+    .contentWorks {
+        padding-top: 20px;
+    }
+    .footertext {
+        padding-top: 40px;
+    }
+    .contentCube {
+        padding-bottom: 30px;
+    }
+    .contentCubeTitle {
+        padding-bottom: 30px;
+    }
+    .totop{
+        display: none;
+    }
+}

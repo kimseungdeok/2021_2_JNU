@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>practice2</title>
+</head>
+<body>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <h3>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 많은 경험이 있는분을 찾습니다.</h3>
+    <hr>
+<form>
+    <fieldset>
+        <legend>입사지원서</legend>
+        <h3>개인정보</h3>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="tel">연락처</label>
+                <input type="tel" id="tel">
+            </li>
+            <li>
+                <label for="class">학과</label>
+                <select id="class">
+                    <optgroup label="공과대학">
+                        <option value="computer" selected>컴퓨터공학과</option>
+                    </optgroup>
+                    <optgroup label="사범대학">
+                        <option value="computer-edu">컴퓨터교육과</option>
+                        <option value="computer-statistics">전산통계학과</option>
+                    </optgroup>
+                    <optgroup label="기타">
+                        <option value="child-edu">유아교육과</option>
+                    </optgroup>
+                </select>
+            </li>
+        </ul>
+        <h3>지원 분야</h3>
+        <ul>
+            <li>
+                <label><input type="radio" name="domain" value="web_pub">웹 퍼블리싱</label>
+            </li>
+            <li>
+                <label><input type="radio" name="domain" value="web_app">웹 어플리케이션</label>
+            </li>
+            <li>
+                <label><input type="radio" name="domain" value="web_dev">웹 개발 지원</label>
+            </li>
+        </ul>
+        <h3>지원 동기</h3>
+        <label for="comment" class="title"></label>
+        <textarea cols="100" rows="20" id="comment"></textarea>
+        <br>
+        <input type="submit" value="접수하기">
+        <input type="reset" value="다시작성">
+    </fieldset>
+</form>
+</body>
+</html>
